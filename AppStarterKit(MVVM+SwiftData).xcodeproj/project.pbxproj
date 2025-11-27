@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3882DE132ED850CF00BAB964 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 3882DE122ED850CF00BAB964 /* AsyncAlgorithms */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3882DDDD2ED84E8300BAB964 /* AppStarterKit(MVVM+SwiftData).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppStarterKit(MVVM+SwiftData).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3882DE132ED850CF00BAB964 /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "AppStarterKit(MVVM+SwiftData)";
 			packageProductDependencies = (
+				3882DE122ED850CF00BAB964 /* AsyncAlgorithms */,
 			);
 			productName = "AppStarterKit(MVVM+SwiftData)";
 			productReference = 3882DDDD2ED84E8300BAB964 /* AppStarterKit(MVVM+SwiftData).app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 3882DDD42ED84E8300BAB964;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3882DE112ED850CF00BAB964 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3882DDDE2ED84E8300BAB964 /* Products */;
 			projectDirPath = "";
@@ -332,6 +341,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3882DE112ED850CF00BAB964 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3882DE122ED850CF00BAB964 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3882DE112ED850CF00BAB964 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3882DDD52ED84E8300BAB964 /* Project object */;
 }
